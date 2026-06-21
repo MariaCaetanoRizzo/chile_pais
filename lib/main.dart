@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'segunda_pagina.dart';
 void main() {
   runApp(const MainApp());
 }
@@ -103,20 +103,29 @@ class _MainAppState extends State<MainApp> {
                       spacing: 25, 
                       children: <Widget>[
                         const Text(
-                          'Conheça um pouco sobre a nação Chilena!',
+                        'Conheça um pouco sobre a nação Chilena!',
                           textAlign: TextAlign.center,
                           style: TextStyle(
-                            color: Color.fromARGB(255, 240, 212, 212),
-                            fontSize: 40,
-                            shadows: [
-                              Shadow(
-                                offset: Offset(2.0, 2.0),
-                                blurRadius: 4.0,
-                                color: Colors.black,
-                              ),
-                            ],
-                          ),
+                          color: Color.fromARGB(255, 240, 212, 212),
+                          fontSize: 40,
                         ),
+                      ),
+
+                      Builder(
+                        builder: (context) {
+                          return ElevatedButton(
+                            onPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => const SegundaPagina(),
+                                ),
+                              );
+                            },
+                            child: const Text('Mapa do Chile'),
+                          );
+                        },
+                      ),
                         
                         // Menu Principal de Botões (4 itens)
                         _construirCardImagem('img/historia.jpeg'),
