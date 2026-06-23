@@ -149,7 +149,7 @@ class _MainAppState extends State<MainApp> {
                           child: Text('Lugares', style: _estiloTextoBotao()),
                         ),
 
-                        _construirCardImagem('img/deserto.jpeg'),
+                        _construirCardImagem('img/rapazes.jpg'),
                         ElevatedButton(
                           onPressed: () => _rolarParaSecao(_secaoRapazesKey),
                           style: _estiloBotao(),
@@ -213,7 +213,7 @@ class _MainAppState extends State<MainApp> {
                               'Do Deserto do Atacama no norte até as geleiras da Patagônia no sul, o Chile oferece paisagens contrastantes. Destaque para Santiago, a capital moderna cercada pela Cordilheira dos Andes.',
                               style: TextStyle(fontSize: 14, color: Colors.white70),
                             ),
-                            _construirCardImagem('img/deserto.jpeg'),
+                            _construirCardImagem('img/local.png'),
                             const Text(
                               'A misteriosa Ilha de Páscoa e as vinícolas do Vale Central também são destinos imperdíveis que atraem milhões de turistas todos os anos.',
                               style: TextStyle(fontSize: 14, color: Colors.white70),
@@ -234,7 +234,7 @@ class _MainAppState extends State<MainApp> {
                               'O nome do projeto é inspirado pelos membros que estão no grupo desenvolvendo o projeto. O grupo é composto pelo líder Rihan de Jesus, pela programadora Maria Caetano Rizzo e pelo designer Arthur Paixão.',
                             style:  TextStyle(fontSize: 14, color: Colors.white70),
                           ),
-                          _construirCardImagem('img/deserto.jpeg'),
+                          _construirCardImagem('img/rapazes.jpg'),
                           Text(
                             'O  projeto é uma homenagem a um indiano do YouTube que sempre salva a equipe ajudando a codar no Flutter.',
                             style: const TextStyle(fontSize: 14, color: Colors.white70),
